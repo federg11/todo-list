@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+
+:root{
+    /*Palette*/
+    --dark:#1e1f20;
+    --ligth: #ffffff;
+    --primary: #FF3366;
+    --accent: #00A6A6;
+
+    /*Fonts size*/
+    --text-title: 5.2em;
+    --text-subtitle: 4.6em;
+    --text-heading: 3.6em;
+    --text-link: 2.2em;
+    --text-base: 1.6em;
+    --text-captions: 1.4em;
+
+    /*spacing*/
+    --spacing-xl: 12rem;
+    --spacing-lg: 8.4rem;
+    --spacing-md: 5.2rem;
+    --spacing-sm: 3.6rem;
+    --spacing-xs: 2.0rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    color: var(--dark);
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+p {
+    font-size: var(--text-base);
+}
+
+.bg-custom {
+    background-color: var(--primary);
+}
+
+.bg-dark {
+    background-color: var(dark);
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+header {
+    display: grid;
+    place-items: center;
+    padding: var(--spacing-sm);
+}
+
+header h1 {
+    font-size: var(--text-subtitle);
+}
+
+footer {
+    background-color: var(--dark);
+    color: var(--ligth);
+    display: grid;
+    place-items: center;
+    padding: var(--spacing-xs);
+}
+
+/*Main section*/
+
+main {
+    margin: var(--spacing-xs) 0 var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+}
+
+/*FORM*/
+
+#create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+#create h2 {
+    font-size: var(--text-heading);
+}
+
+#create form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+#create form label {
+    font-size: var(--text-link);
+}
+
+#create form input {
+    padding: var(--spacing-xs);
+    font-size: var(--text-base);
+}
+
+#btn {
+    padding: var(--spacing-xs);
+    background-color: var(--primary);
+    color: var(--ligth);
+    font-size: var(--text-link);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#tasks {
+    margin-top: 30px;
+    min-height: 40vh;
+}
+
+#tasks h2 {
+    font-size: 42px;
+    text-align: center;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) 0;
+    border-bottom: 3px solid var(--primary);
+}
+
+.task h2 {
+    font-size: var(--text-heading)
+}
+
+.task p {
+    font-size: var(--text-link);
+}
